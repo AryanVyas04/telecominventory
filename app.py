@@ -13,6 +13,7 @@ try:
         callerid = []
         networkprovider = []
         callduration = []
+        b=""
         for i in range(len(data['caller_id'])):
             if phone == data['caller_id'][i]:
                 st.text('Dear user your name is ')
