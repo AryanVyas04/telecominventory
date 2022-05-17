@@ -4,7 +4,7 @@ import streamlit as st
 try:
     with st.form(key='my_form'):
         st.header('Network Prediction')
-        d = st.number_input('Enter the phone number ',key=1)
+        d = st.number_input('Enter the phone number ',70000000000,99999999999,key=1)
        
        
         submit_button = st.form_submit_button(label='Submit')
