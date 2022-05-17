@@ -3,12 +3,9 @@ import statistics
 import streamlit as st
 try:
     with st.form(key='my_form'):
-        st.header('Network Prediction')
-        d = st.number_input('Enter the phone number ',70000000000,99999999999,key=1)
-       
-       
-        submit_button = st.form_submit_button(label='Submit')
-        
+    st.header('Network Prediction')
+    d = st.number_input('Enter the phone number ',700000000,99999999999,key=1)   
+    submit_button = st.form_submit_button(label='Submit')      
     data = pd.read_csv('Book1.csv')
     phone = int (d)
     area = []
